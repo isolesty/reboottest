@@ -1,0 +1,12 @@
+[Unit]
+Description=Shutdown/Reboot test service
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/testuser/.Xauthority
+ExecStart=/usr/bin/starttest.sh
+KillMode=process
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
