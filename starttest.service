@@ -3,7 +3,7 @@ Description=Shutdown/Reboot test service
 
 [Service]
 Environment=DISPLAY=:0
-Environment=XAUTHORITY=/home/testuser/.Xauthority
+Environment=XAUTHORITY=/home/isolet/.Xauthority
 ExecStart=/usr/bin/starttest.sh
 KillMode=process
 Type=simple
